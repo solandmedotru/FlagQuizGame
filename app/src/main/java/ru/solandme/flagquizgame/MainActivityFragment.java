@@ -1,7 +1,8 @@
 package ru.solandme.flagquizgame;
 
-import android.support.v4.app.Fragment;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,5 +19,14 @@ public class MainActivityFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_main, container, false);
+    }
+
+    public void updateGuessRows(SharedPreferences defaultSharedPreferences) {
+    }
+
+    public void updateRegions(SharedPreferences defaultSharedPreferences) {
+    }
+
+    public void resetQuiz() {
     }
 }
